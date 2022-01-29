@@ -14,4 +14,21 @@ export default class VertexArray {
         index: number) {
         gl.enableVertexAttribArray(index);
     }
+    vertexAttribPointer(
+        gl: WebGL2RenderingContext,
+        index: number,
+        size: number,
+        type: number,
+        normalized: boolean,
+        stride: number,
+        offset: number) {
+        gl.vertexAttribPointer(
+            index,
+            size,
+            type,
+            normalized,
+            stride,
+            offset
+        );
+    }
 }

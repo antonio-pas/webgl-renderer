@@ -16,5 +16,9 @@ export default class Shader {
         gl: WebGL2RenderingContext
     ) {
         gl.compileShader(this.handle);
+        if (!gl.getShaderParameter(this.handle, gl.COMPILE_STATUS)) {
+            alert(`An error occurred compiling the shaders: ${gl.getShaderInfoLog(this.handle)}`);
+            gl.deleteShader(this.handle);
+        }
     }
 }

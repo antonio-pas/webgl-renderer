@@ -4,7 +4,7 @@ export default class BufferObject {
     constructor(
         gl: WebGL2RenderingContext,
         kind: number) {
-        this.handle = gl.createShader(kind);
+        this.handle = gl.createBuffer();
         this.kind = kind;
     }
 

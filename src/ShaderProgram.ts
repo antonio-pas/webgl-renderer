@@ -7,6 +7,7 @@ export default class ShaderProgram {
         shaders: Shader[]
     ) {
         this.handle = gl.createProgram();
+        gl.useProgram(this.handle);
         this.shaders = shaders;
         for (let i = 0; i < shaders.length; i++) {
             let shader = shaders[i];

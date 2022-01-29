@@ -4,7 +4,7 @@
     "description": "",
     "private": true,
     "scripts": {
-        "run": "npx webpack && node index.js"
+        "start": "npx webpack && node index.js"
     },
     "keywords": [],
     "author": "",
