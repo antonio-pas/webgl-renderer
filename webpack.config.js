@@ -1,4 +1,4 @@
-import resolve from 'path';
+let path = require('path');
 
 module.exports = {
     mode: 'development',
@@ -17,6 +17,6 @@ module.exports = {
     },
     output: {
         filename: 'bundle.js',
-        path: resolve(__dirname, 'dist'),
+        path: path.resolve(__dirname, 'dist'),
     },
 };
